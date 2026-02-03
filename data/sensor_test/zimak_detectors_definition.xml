@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<detectors>
+    <!-- N approach (-746065785) -->
+    <detectorDefinition id="zimak_N1" lane="-746065785_0" pos="-1" type="source"/>
+    <detectorDefinition id="zimak_N2" lane="-746065785_1" pos="-1" type="source"/>
+    <detectorDefinition id="zimak_N3" lane="-746065785_2" pos="-1" type="source"/>
+
+    <!-- S approach (746063393) -->
+    <detectorDefinition id="zimak_S1" lane="746063393_0" pos="-1" type="source"/>
+    <detectorDefinition id="zimak_S2" lane="746063393_1" pos="-1" type="source"/>
+    <detectorDefinition id="zimak_S3" lane="746063393_2" pos="-1" type="source"/>
+
+    <!-- E approach (-498389378#1) -->
+    <detectorDefinition id="zimak_E1" lane="-498389378#1_0" pos="-1" type="source"/>
+    <detectorDefinition id="zimak_E2" lane="-498389378#1_1" pos="-1" type="source"/>
+    <detectorDefinition id="zimak_E3" lane="-498389378#1_2" pos="-1" type="source"/>
+
+    <!-- W approach (559384192) -->
+    <detectorDefinition id="zimak_W1" lane="559384192_0" pos="-1" type="source"/>
+    <detectorDefinition id="zimak_W2" lane="559384192_1" pos="-1" type="source"/>
+    <detectorDefinition id="zimak_W3" lane="559384192_2" pos="-1" type="source"/>
+</detectors>

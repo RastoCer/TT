@@ -1,0 +1,6 @@
+traci==1.21.0
+numpy
+torch
+torchviz
+pandas
+matplotlib

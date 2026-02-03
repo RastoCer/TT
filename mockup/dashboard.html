@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrnavaFlow - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary-color: #21347b;
+            --secondary-color: #c6a171;
+            --accent-light: #6e83b2;
+            --background-light: #b6c1d7;
+            --background-dark: #e5e9f1;
+            --highlight-light: #d7bc98;
+            --highlight-bg: #efe2d1;
+        }
+
+        .badge.bg-success {
+            background-color: #9cb991 !important;
+        }
+        .badge.bg-warning {
+            background-color: #e6b360 !important;
+        }
+
+        body {
+            background-color: #e5e9f1;
+            color: var(--primary-color);
+        }
+
+        .navbar {
+            background-color: var(--primary-color);
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--highlight-light);
+            border-color: var(--highlight-light);
+        }
+
+        .btn-outline-primary {
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+            background-color: transparent;
+        }
+
+        .btn-outline-primary:hover {
+            color: var(--highlight-light);
+            border-color: var(--highlight-light);
+            background-color: var(--highlight-bg);
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .footer ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer ul li {
+            list-style: none;
+        }
+
+        .footer ul li a {
+            color: #fff;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer hr {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .lines {
+            background: url(https://www.trnava.sk/Content/assets/img/lines.svg) repeat-x;
+            height: 30px;
+            font-size: 11px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">TrnavaFlow</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="model_training.html">Tréning modelu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Dokumentácia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">API</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Profil užívateľa Admin
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Môj profil</a></li>
+                            <li><a class="dropdown-item" href="#">Nastavenia</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="index.html">Odhlásiť sa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Section -->
+    <div class="container py-5">
+        <div class="text-center mb-5">
+            <h2>Dashboard</h2>
+            <p class="text-muted">Vizualizácia reálnych údajov a analýza modelov.</p>
+        </div>
+        <div class="row g-4">
+            <!-- Chart Containers -->
+            <div class="col-md-6">
+                <h4>Zber údajov</h4>
+                <canvas id="dataCollectionChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <h4>Spracovanie modelu</h4>
+                <canvas id="modelProcessingChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <h4>Rozhodnutia modelu</h4>
+                <canvas id="modelDecisionsChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <h4>Počet nahraných dát</h4>
+                <canvas id="uploadedDataChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <h4>Čas spracovania</h4>
+                <canvas id="processingTimeChart"></canvas>
+            </div>
+            <div class="col-md-6">
+                <h4>Presnosť modelu</h4>
+                <canvas id="modelAccuracyChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="mb-3">
+                <span class="navbar-brand">TrnavaFlow</span>
+            </div>
+            <ul class="list-unstyled d-flex justify-content-center mb-3">
+                <li class="mx-2"><a href="dashboard.html" class="text-white text-decoration-none">Dashboard</a></li>
+                <li class="mx-2"><a href="model_training.html" class="text-white text-decoration-none">Tréning modelu</a></li>
+                <li class="mx-2"><a href="#features" class="text-white text-decoration-none">Dokumentácia</a></li>
+                <li class="mx-2"><a href="#features" class="text-white text-decoration-none">API</a></li>
+                <li class="mx-2"><a href="index.html" class="text-white text-decoration-none">Odhlásenie</a></li>
+            </ul>
+            <hr class="text-white">
+            <p class="mb-0">&copy; 2024 TrnavaFlow by SmarTTeam.</p>
+            <p>Všetky práva vyhradené | Navrhnuté pre Trnava.sk</p>
+        </div>
+    </footer>
+
+<script>
+// Initialize charts globally
+const charts = {};
+
+const createChart = (context, label, initialData, color) => {
+    const chart = new Chart(context, {
+        type: 'line',
+        data: {
+            labels: Array.from({ length: initialData.length }, (_, i) => `T-${initialData.length - i}`),
+            datasets: [
+                {
+                    label: label,
+                    data: initialData,
+                    borderColor: color,
+                    backgroundColor: `${color}33`,
+                    fill: true,
+                    tension: 0.3,
+                },
+            ],
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: true, position: 'top' },
+            },
+            scales: {
+                x: { title: { display: true, text: 'Čas (real-time)' } },
+                y: { title: { display: true, text: label } },
+            },
+        },
+    });
+    return chart;
+};
+
+// Initialize all charts with placeholder data
+charts.dataCollectionChart = createChart(
+    document.getElementById('dataCollectionChart').getContext('2d'),
+    'Prichádzajúce údaje (vozidlá/minúta)',
+    [0],
+    '#21347b'
+);
+charts.modelProcessingChart = createChart(
+    document.getElementById('modelProcessingChart').getContext('2d'),
+    'Čas spracovania (ms)',
+    [0],
+    '#c6a171'
+);
+charts.modelDecisionsChart = createChart(
+    document.getElementById('modelDecisionsChart').getContext('2d'),
+    'Rozhodnutia (semafory)',
+    [0],
+    '#9cb991'
+);
+charts.uploadedDataChart = createChart(
+    document.getElementById('uploadedDataChart').getContext('2d'),
+    'Nahrané dáta',
+    [0],
+    '#e6b360'
+);
+charts.processingTimeChart = createChart(
+    document.getElementById('processingTimeChart').getContext('2d'),
+    'Čas spracovania (s)',
+    [0],
+    '#6e83b2'
+);
+charts.modelAccuracyChart = createChart(
+    document.getElementById('modelAccuracyChart').getContext('2d'),
+    'Presnosť modelu (%)',
+    [0],
+    '#d7bc98'
+);
+
+// Simulate real-time API data (replace this with actual API calls)
+const simulateAPIData = () => {
+    const data = {
+        dataCollectionChart: Math.floor(Math.random() * 500 + 100), // Vehicles per minute
+        modelProcessingChart: Math.random() * 200 + 800, // Processing time in ms
+        modelDecisionsChart: Math.floor(Math.random() * 100 + 50), // Semaphore decisions
+        uploadedDataChart: Math.floor(Math.random() * 200), // Uploaded data packets
+        processingTimeChart: Math.random() * 5 + 1, // Processing time in seconds
+        modelAccuracyChart: Math.random() * 10 + 90, // Accuracy in percentage
+    };
+    return data;
+};
+
+// Update charts in real-time
+const updateCharts = () => {
+    const newData = simulateAPIData(); // Replace this with a fetch call to your API
+
+    Object.keys(charts).forEach((chartId) => {
+        const chart = charts[chartId];
+        chart.data.datasets[0].data.push(newData[chartId]);
+        chart.data.labels.push(new Date().toLocaleTimeString()); // Timestamp
+        if (chart.data.datasets[0].data.length > 10) {
+            chart.data.datasets[0].data.shift();
+            chart.data.labels.shift();
+        }
+        chart.update();
+    });
+};
+
+// Update every 2 seconds
+setInterval(updateCharts, 2000);
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+	"name": "Ubuntu",
+	"build": {
+	  "dockerfile": "nn_container"
+	}
+	"remoteUser": "root"
+}

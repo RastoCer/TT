@@ -1,0 +1,21 @@
+https://sumo.dlr.de/docs/Installing/index.html
+https://pytorch.org/
+https://www.python.org/downloads/
+
+# in powershell navigate here
+
+python -m venv venv
+
+https://virtualenv.pypa.io/en/legacy/userguide.html#activate-script
+
+Set-ExecutionPolicy AllSigned
+
+# replace path to env with real path. If still in same dir, its just venv
+[\path\to\env]\Scripts\activate
+
+# install stuff, replace cu130 with new torch if there is a new one at least 129 is needed to work with 50xx cards
+
+pip3 install -r requirements.txt
+
+
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-08 22:27:26.735490 by Eclipse SUMO edgeDataFromFlow.py v1_25_0+0000-ac6c5a6752d
+  options: -d .\zimak_detectors_definition.xml -f .\zimak_flow_data.csv <doubleminus>id-column Detector <doubleminus>time-column Time <doubleminus>time-scale 60 -i 60 -q flow -v -o .\edge_counts\zimak_edgedata.xml
+-->
+
+<data>
+    <interval id="flowdata" begin="0" end="3600">
+        <edge id="-498389378#1" flow="288.0" groups="1"/>
+        <edge id="-746065785" flow="288.0" groups="1"/>
+        <edge id="559384192" flow="288.0" groups="1"/>
+        <edge id="746063393" flow="288.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="3600" end="7200">
+        <edge id="-498389378#1" flow="315.0" groups="1"/>
+        <edge id="-746065785" flow="315.0" groups="1"/>
+        <edge id="559384192" flow="315.0" groups="1"/>
+        <edge id="746063393" flow="315.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="7200" end="10800">
+        <edge id="-498389378#1" flow="798.0" groups="1"/>
+        <edge id="-746065785" flow="798.0" groups="1"/>
+        <edge id="559384192" flow="798.0" groups="1"/>
+        <edge id="746063393" flow="798.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="10800" end="14400">
+        <edge id="-498389378#1" flow="3282.0" groups="1"/>
+        <edge id="-746065785" flow="3282.0" groups="1"/>
+        <edge id="559384192" flow="3282.0" groups="1"/>
+        <edge id="746063393" flow="3282.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="14400" end="18000">
+        <edge id="-498389378#1" flow="5742.0" groups="1"/>
+        <edge id="-746065785" flow="5742.0" groups="1"/>
+        <edge id="559384192" flow="5742.0" groups="1"/>
+        <edge id="746063393" flow="5742.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="18000" end="21600">
+        <edge id="-498389378#1" flow="8955.0" groups="1"/>
+        <edge id="-746065785" flow="8955.0" groups="1"/>
+        <edge id="559384192" flow="8955.0" groups="1"/>
+        <edge id="746063393" flow="8955.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="21600" end="25200">
+        <edge id="-498389378#1" flow="7992.0" groups="1"/>
+        <edge id="-746065785" flow="7992.0" groups="1"/>
+        <edge id="559384192" flow="7992.0" groups="1"/>
+        <edge id="746063393" flow="7992.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="25200" end="28800">
+        <edge id="-498389378#1" flow="7797.0" groups="1"/>
+        <edge id="-746065785" flow="7797.0" groups="1"/>
+        <edge id="559384192" flow="7797.0" groups="1"/>
+        <edge id="746063393" flow="7797.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="28800" end="32400">
+        <edge id="-498389378#1" flow="8052.0" groups="1"/>
+        <edge id="-746065785" flow="8052.0" groups="1"/>
+        <edge id="559384192" flow="8052.0" groups="1"/>
+        <edge id="746063393" flow="8052.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="32400" end="36000">
+        <edge id="-498389378#1" flow="8610.0" groups="1"/>
+        <edge id="-746065785" flow="8610.0" groups="1"/>
+        <edge id="559384192" flow="8610.0" groups="1"/>
+        <edge id="746063393" flow="8610.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="36000" end="39600">
+        <edge id="-498389378#1" flow="8529.0" groups="1"/>
+        <edge id="-746065785" flow="8529.0" groups="1"/>
+        <edge id="559384192" flow="8529.0" groups="1"/>
+        <edge id="746063393" flow="8529.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="39600" end="43200">
+        <edge id="-498389378#1" flow="8553.0" groups="1"/>
+        <edge id="-746065785" flow="8553.0" groups="1"/>
+        <edge id="559384192" flow="8553.0" groups="1"/>
+        <edge id="746063393" flow="8553.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="43200" end="46800">
+        <edge id="-498389378#1" flow="9090.0" groups="1"/>
+        <edge id="-746065785" flow="9090.0" groups="1"/>
+        <edge id="559384192" flow="9090.0" groups="1"/>
+        <edge id="746063393" flow="9090.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="46800" end="50400">
+        <edge id="-498389378#1" flow="8721.0" groups="1"/>
+        <edge id="-746065785" flow="8721.0" groups="1"/>
+        <edge id="559384192" flow="8721.0" groups="1"/>
+        <edge id="746063393" flow="8721.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="50400" end="54000">
+        <edge id="-498389378#1" flow="9066.0" groups="1"/>
+        <edge id="-746065785" flow="9066.0" groups="1"/>
+        <edge id="559384192" flow="9066.0" groups="1"/>
+        <edge id="746063393" flow="9066.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="54000" end="57600">
+        <edge id="-498389378#1" flow="8955.0" groups="1"/>
+        <edge id="-746065785" flow="8955.0" groups="1"/>
+        <edge id="559384192" flow="8955.0" groups="1"/>
+        <edge id="746063393" flow="8955.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="57600" end="61200">
+        <edge id="-498389378#1" flow="8373.0" groups="1"/>
+        <edge id="-746065785" flow="8373.0" groups="1"/>
+        <edge id="559384192" flow="8373.0" groups="1"/>
+        <edge id="746063393" flow="8373.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="61200" end="64800">
+        <edge id="-498389378#1" flow="6030.0" groups="1"/>
+        <edge id="-746065785" flow="6030.0" groups="1"/>
+        <edge id="559384192" flow="6030.0" groups="1"/>
+        <edge id="746063393" flow="6030.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="64800" end="68400">
+        <edge id="-498389378#1" flow="3819.0" groups="1"/>
+        <edge id="-746065785" flow="3819.0" groups="1"/>
+        <edge id="559384192" flow="3819.0" groups="1"/>
+        <edge id="746063393" flow="3819.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="68400" end="72000">
+        <edge id="-498389378#1" flow="2271.0" groups="1"/>
+        <edge id="-746065785" flow="2271.0" groups="1"/>
+        <edge id="559384192" flow="2271.0" groups="1"/>
+        <edge id="746063393" flow="2271.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="72000" end="75600">
+        <edge id="-498389378#1" flow="1593.0" groups="1"/>
+        <edge id="-746065785" flow="1593.0" groups="1"/>
+        <edge id="559384192" flow="1593.0" groups="1"/>
+        <edge id="746063393" flow="1593.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="75600" end="79200">
+        <edge id="-498389378#1" flow="759.0" groups="1"/>
+        <edge id="-746065785" flow="759.0" groups="1"/>
+        <edge id="559384192" flow="759.0" groups="1"/>
+        <edge id="746063393" flow="759.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="79200" end="82800">
+        <edge id="-498389378#1" flow="36.0" groups="1"/>
+        <edge id="-746065785" flow="36.0" groups="1"/>
+        <edge id="559384192" flow="36.0" groups="1"/>
+        <edge id="746063393" flow="36.0" groups="1"/>
+    </interval>
+    <interval id="flowdata" begin="82800" end="86400">
+        <edge id="-498389378#1" flow="3.0" groups="1"/>
+        <edge id="-746065785" flow="3.0" groups="1"/>
+        <edge id="559384192" flow="3.0" groups="1"/>
+        <edge id="746063393" flow="3.0" groups="1"/>
+    </interval>
+</data>

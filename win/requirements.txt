@@ -1,0 +1,7 @@
+traci==1.21.0
+numpy
+pandas
+matplotlib
+--pre
+--index-url https://download.pytorch.org/whl/cu130
+torch
