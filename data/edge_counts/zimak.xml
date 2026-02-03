@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-11-13 23:21:45.272652 by Eclipse SUMO edgeDataFromFlow.py v1_25_0+0000-ac6c5a6752d
+  options: -d .\sumo_network\sensors.add.xml -f .\sensor_test\cross_N.jsonl -q flow -v -o .\edge_counts\zimak.xml
+-->
+
+<data>
+    <interval id="flowdata" begin="0" end="86400">
+    </interval>
+</data>

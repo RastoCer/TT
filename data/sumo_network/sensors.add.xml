@@ -1,0 +1,21 @@
+<additional>
+    <!-- N approach: edge -746065785 -->
+    <laneAreaDetector id="zimak_N" lane="-746065785_0" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+    <laneAreaDetector id="zimak_N" lane="-746065785_1" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+    <laneAreaDetector id="zimak_N" lane="-746065785_2" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+
+    <!-- S approach: edge 746063393 -->
+    <!-- <laneAreaDetector id="zimak_S" lane="746063393_0" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+    <laneAreaDetector id="zimak_S" lane="746063393_1" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+    <laneAreaDetector id="zimak_S" lane="746063393_2" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/> -->
+
+    <!-- E approach: edge -498389378#1 -->
+    <!-- <laneAreaDetector id="zimak_E" lane="-498389378#1_0" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+    <laneAreaDetector id="zimak_E" lane="-498389378#1_1" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+    <laneAreaDetector id="zimak_E" lane="-498389378#1_2" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/> -->
+
+    <!-- W approach: edge 559384192 -->
+    <!-- <laneAreaDetector id="zimak_W" lane="559384192_0" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+    <laneAreaDetector id="zimak_W" lane="559384192_1" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/>
+    <laneAreaDetector id="zimak_W" lane="559384192_2" pos="-15" endPos="0" freq="60" file="crossroad_approach.xml"/> -->
+</additional>
